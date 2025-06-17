@@ -1,12 +1,14 @@
 import requests
 import json
 from datetime import datetime
+import os
 
 REPO = "SavageFRVR/YTLite"
 OUTPUT_FILE = "ytlite.json"
 
 api_url = f"https://api.github.com/repos/{REPO}/releases/latest"
-res = requests.get(api_url)
+headers = {"Authorization": f"token {os.getenv('GH_TOKEN')}"}
+res = requests.get(api_url, headers=headers)
 data = res.json()
 
 tag = data["tag_name"]
