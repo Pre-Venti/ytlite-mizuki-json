@@ -3,7 +3,6 @@ import json
 from datetime import datetime
 
 REPO = "SavageFRVR/YTLite"
-IPA_NAME = "YTLite.ipa"
 OUTPUT_FILE = "ytlite.json"
 
 api_url = f"https://api.github.com/repos/{REPO}/releases/latest"
@@ -13,8 +12,10 @@ data = res.json()
 tag = data["tag_name"]
 version = data["name"] or tag
 ipa_url = ""
+size = 0
+
 for asset in data["assets"]:
-    if asset["name"] == IPA_NAME:
+    if asset["name"].lower().endswith(".ipa"):
         ipa_url = asset["browser_download_url"]
         size = asset["size"]
         break
