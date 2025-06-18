@@ -33,7 +33,7 @@ if "tag_name" not in data:
 
 # Version extrahieren
 tag = data["tag_name"]
-version = data.get("name", tag)
+version = tag.replace("v", "").split("-")[0]
 
 # IPA suchen
 ipa_url = None
