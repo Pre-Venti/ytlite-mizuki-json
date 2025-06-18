@@ -3,7 +3,7 @@
   "identifier": "com.savagefrvr.ytlite",
   "subtitle": "Lightweight YouTube app",
   "developer": "SavageFRVR",
-  "sourceURL": "https://pre-venti.github.io/ytlite-json-source/ytlite.json",
+  "sourceURL": "https://pre-venti.github.io/ytlite-mizuki-json/ytlite.json",
   "iconURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/YouTube_social_white_squircle_%282017%29.svg/200px-YouTube_social_white_squircle_%282017%29.svg.png",
   "tintColor": "#FF0000",
   "apps": [
@@ -17,7 +17,7 @@
       "iconURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/YouTube_social_white_squircle_%282017%29.svg/200px-YouTube_social_white_squircle_%282017%29.svg.png",
       "localizedDescription": "Ein modifizierter YouTube-Client mit Fokus auf Minimalismus und Datenschutz.",
       "size": 120974902,
-      "versionDate": "2025-06-17T22:12:00+0000",
+      "versionDate": "2025-06-18T19:13:16Z",
       "versionDescription": "**Full Changelog**: https://github.com/SavageFRVR/YTLite/compare/v20.20.7-5.2b1...v20.23.3-5.2b1",
       "tintColor": "#FF0000"
     }
