@@ -22,6 +22,8 @@ jobs:
 
       - name: Generate JSON File
         run: python generate_json.py
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Commit and Push Changes
         run: |
